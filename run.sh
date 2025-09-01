@@ -10,7 +10,7 @@ cp test/programa$1.txt programa.txt
 ./tb > saida.out
 cp saida.out test/saida$1.out
 cp saida.vcd test/saida$1.vcd
-rm -rf saida.out saida.vcd programa.txt teste.txt
+#rm -rf saida.out saida.vcd programa.txt teste.txt
 
 if diff -w <(grep '===' test/saida$1.out) <(grep '===' test/saida$1.ok) >/dev/null; then
     echo "OK"
